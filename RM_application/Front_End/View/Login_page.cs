@@ -43,5 +43,10 @@ namespace RM_application.Front_End.View
         {
             RM_application.Backend.Controller.Login_page_backend.findUser(textBox1.Text, textBox2.Text);
         }
+
+        private void Login_page_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

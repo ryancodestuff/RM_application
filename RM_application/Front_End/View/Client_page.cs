@@ -36,5 +36,10 @@ namespace RM_application.Front_End.View
         {
 
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
