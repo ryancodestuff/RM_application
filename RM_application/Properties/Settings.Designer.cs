@@ -23,17 +23,14 @@ namespace RM_application.Properties {
             }
         }
         
-        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"C:\\Users\\Ryan Francis\\source" +
-            "\\repos\\RM_application\\RM_application\\Backend\\Repositories\\Data1.mdf\";Integrated " +
-            "Security=True;C")]
-        public string Data1 {
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\AllData.mdf;I" +
+            "ntegrated Security=True;Connect Timeout=30")]
+        public string ConnectionString {
             get {
-                return ((string)(this["Data1"]));
-            }
-            set {
-                this["Data1"] = value;
+                return ((string)(this["ConnectionString"]));
             }
         }
     }

@@ -22,7 +22,7 @@ namespace RM_application.Backend
 
         private Connection()
         {
-            conString = "Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename="C: \Users\Ryan Francis\source\repos\RM_application\RM_application\Backend\Repositories\Data1.mdf";Integrated Security=True;Connect Timeout=30"
+            conString = Properties.Settings.Default.ConnectionString;
 
         }
 
